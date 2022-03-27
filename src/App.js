@@ -4,9 +4,12 @@ import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
 function App() {
+  function logWhenClicked() {
+    alert("Hello there!");
+  }
   return (
     <div>
-      <Logo appName="Teniola" />
+      <Logo handleClick={logWhenClicked} appName="Teniola" />
       <BestPokemon abilities={["Anticipation", "Adaptability", "Run-Away"]} />
       <CaughtPokemon date={new Date().toLocaleDateString()} />
     </div>
