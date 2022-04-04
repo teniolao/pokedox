@@ -4,7 +4,7 @@ const CaughtPokemon = (props) => {
   const [caught, setCaught] = useState([]);
 
   function catchPokemon() {
-    setCaught(caught.concat("pikachu"));
+    setCaught(caught.concat("Squirtle"));
   }
   return (
     <p>
